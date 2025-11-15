@@ -8,6 +8,7 @@
 *{
     margin: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    scroll-behavior: smooth;
 }
 section{
     background-position: center;
@@ -97,7 +98,7 @@ section{
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-b: px;
+    margin-top: 70px;
     animation-name: change-rotate;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -110,6 +111,8 @@ section{
     50% {transform: rotate(180deg);}
     75% {transform: rotate(270deg);}
     100% {transform: rotate(360deg);}
+    
+    
     
 }
 .title{
@@ -210,4 +213,134 @@ section{
 }
 .Triton-card img{
     padding-bottom: 20px;
+}
+
+.skills-card{
+    background-image: url(img/form3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin: 20px;
+    padding-left: 10px;
+}
+
+.skills-card p{
+    color: #000;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 500px;
+    font-family: 'Comfortaa';
+}
+.works-block img{
+    margin: 0 20px;
+    width: 27%;
+    box-shadow: 
+      7px 7px 0 #000000;
+}
+.comments-block{
+    justify-content: space-evenly;
+    max-width: 1150px;
+    margin: auto;
+}
+.comment-card{
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+}
+.comment-card h3{
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+}
+.comment-card p{
+    font-size: 14px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 20px;
+    text-align: center  ;
+}
+.comment{
+    width: 327px;
+    height: 161px;
+    justify-content: center;
+}
+.comment p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    max-width: 250px;
+}
+footer{
+   background-color: #200153;
+   height: 110px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: #FFF;
+}
+
+.footer-info p{
+   font-family: 'Comfortaa';
+   padding-bottom: 10px;
+}
+
+.footer-year p{
+   font-family: 'Comfortaa';
+   letter-spacing: 1.5px;
+}
+
+.footer-links a{
+   margin-right: 15px;
+}
+nav{
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 10;
+}
+.fixed-menu{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex: 1;
+}
+.nav-links{
+   display: flex;
+   justify-content: center;
+   flex-grow: 1;
+   padding-right: 150px;
+}
+.nav-link{
+   width: 112px;
+   height: 40px;
+   border-radius: 12px;
+   border: 2px solid #000;
+   background-color: #FFF;
+   text-decoration: none;
+   color: #000;
+   font-size: 20px;
+   font-family: 'Comfortaa';
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 20px;
+}
+
+.logo{
+   color: #BBFF2C;
+   font-size: 80px;
+   padding-left: 50px;
+}
+.active{
+   background-color: #BBFF2C;
 }
